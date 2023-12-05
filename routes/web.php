@@ -28,6 +28,10 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
+Route::get('/lihat', function () {
+    return view('lihat');
+});
+
 Route::get('/tambah', [PegawaiController::class, 'create']);
 
 Route::post('/tambah/simpan', [PegawaiController::class, 'store']);
